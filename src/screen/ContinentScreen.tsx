@@ -17,7 +17,7 @@ const ContinentScreen = () => {
 
   const { data } = useGetContinentQuery({
     variables: {
-      code: code || "", // Provide a default value to avoid undefined
+      code: code || "",
     },
   });
 
