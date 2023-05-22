@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.flex > div {
+  border: 1px solid lightgray;
+  padding: 2rem 1rem;
+  width: 200px;
+  cursor: pointer;
+}
+
+.flex.country > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
