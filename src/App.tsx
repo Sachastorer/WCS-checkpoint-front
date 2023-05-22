@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ContinentsScreen />} />
         <Route path="/continent/:code" element={<ContinentScreen />} />
-        <Route path="/country" element={<CountryScreen />} />
+        <Route path="/country/:code" element={<CountryScreen />} />
       </Routes>
     </div>
   );

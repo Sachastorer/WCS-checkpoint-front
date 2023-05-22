@@ -17,13 +17,13 @@ const ContinentScreen = () => {
 
   const { data } = useGetContinentQuery({
     variables: {
-      code: "AF",
+      code: code || "", // Provide a default value to avoid undefined
     },
   });
 
   useEffect(() => {
     if (data?.continent) setCountries(data?.continent?.countries);
-  }, [data, code]);
+  }, [data]);
   return (
     <>
       <div className="container">
